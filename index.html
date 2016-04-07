@@ -68,7 +68,7 @@
             var HTMLString = "<div class='col-md-4 drop-"+(Math.round(Math.random()*10000%3)+1)+"'><h2>"+wifi.HOTSPOT_NAME+"</h2><p><ul class='list-group'>";
             var items = "";
             for (var key in wifi) {
-              if(key!="_id" && key!="o_tlc_agency_img_front") {
+              if(key!="_id") {
                 items=items+"<li class='list-group-item'>"+key+":"+wifi[key]+"</li>";
               }
             }
